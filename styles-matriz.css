@@ -1,0 +1,55 @@
+
+.custom-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.custom-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+.custom-overlay h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.custom-overlay p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.custom-overlay button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.custom-overlay button:hover {
+    background-color: #e0e0e0;
+}
+
+.custom-full-width {
+    width: 100%;
+    height: 300px;
+    grid-column: 1 / -1;
+}
